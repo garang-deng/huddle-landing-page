@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  /* primary */
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background: url(images/bg-mobile.svg), var(--violet);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  line-height: 1.6;
+}
+
+header img {
+  width: 150px;
+  display: block;
+  justify-content: flex-end;
+}
+
+main img {
+  width: 100%;
+  margin: 10% 0;
+}
+
+h1 {
+  font-family: "Poppin", sans-serif;
+  font-weight: 600;
+  font-size: 1.45em;
+  color: white;
+}
+
+p {
+  color: rgb(247, 241, 241);
+}
+
+button {
+  width: 60vw;
+  height: 3em;
+  border-radius: 1.5em;
+  border: none;
+  cursor: pointer;
+  color: var(--violet);
+  margin: 20px 0;
+}
+
+button:hover {
+  background-color: var(--soft-magenta);
+  color: white;
+}
+
+.fa-brand {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid white;
+  border-radius: 16px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-top: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.fa-brand:hover {
+  border: 2px solid var(--soft-magenta);
+  color: var(--soft-magenta);
+}
+
+@media (min-width: 800px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px;
+    background: url(images/bg-desktop.svg), var(--violet);
+  }
+  header {
+    grid-column: span 2;
+    width: 250px;
+  }
+  header img {
+    width: 100%;
+  }
+
+  main {
+    grid-row: 2;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    place-items: center;
+  }
+
+  h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0;
+  }
+  .image {
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    text-align: left;
+  }
+  .text button {
+    width: 30%;
+  }
+  footer {
+    display: block;
+    grid-column: span 2;
+    grid-row: 3;
+    text-align: right;
+  }
+  .fa-brand {
+    text-align: center;
+  }
+}
