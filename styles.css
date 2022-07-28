@@ -17,6 +17,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   background: url(images/bg-mobile.svg), var(--violet);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -98,7 +99,7 @@ button:hover {
     grid-row: 2;
     grid-column: span 2;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
     column-gap: 40px;
     place-items: center;
   }
