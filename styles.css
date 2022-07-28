@@ -85,6 +85,8 @@ button:hover {
     grid-template-columns: 1fr 1fr;
     padding: 60px;
     background: url(images/bg-desktop.svg), var(--violet);
+    background-position: center;
+    background-size: cover;
   }
   header {
     grid-column: span 2;
